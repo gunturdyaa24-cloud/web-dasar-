@@ -1,0 +1,442 @@
+/* ===== PENGATURAN DASAR ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #111111;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* ===== HEADER (gaya Pinterest) ===== */
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 24px;
+  background-color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #e60023;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;   /* bikin fotonya bulat */
+  object-fit: cover;    /* supaya foto tidak gepeng */
+}
+
+.menu {
+  display: flex;
+  gap: 5px;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 24px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: #efefef;
+}
+
+.menu a.aktif {
+  background-color: #111111;
+  color: white;
+}
+
+.cari {
+  flex: 1;
+  height: 48px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 24px;
+  background-color: #efefef;
+  font-size: 16px;
+}
+
+.header-kanan {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ikon {
+  font-size: 22px;
+}
+
+.tombol-merah {
+  padding: 12px 20px;
+  border-radius: 24px;
+  background-color: #e60023;
+  color: white;
+  font-weight: bold;
+}
+
+.tombol-merah:hover {
+  background-color: #c4001e;
+}
+
+
+/* ===== BODY (gaya Canva) ===== */
+
+/* Banner atas */
+.hero {
+  margin: 10px 24px;
+  padding: 70px 20px;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #7d2ae8, #00c4cc);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.kotak-cari {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.kotak-cari input {
+  flex: 1;
+  padding: 0 20px;
+  border: none;
+  font-size: 16px;
+}
+
+.kotak-cari button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 50px;
+  background-color: #7d2ae8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.kotak-cari button:hover {
+  background-color: #6520c2;
+}
+
+/* Ikon jenis desain */
+.jenis-desain {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.ikon-jenis {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 8px auto;
+  border-radius: 20px;
+  font-size: 28px;
+  line-height: 64px;
+}
+
+.ikon-jenis:hover {
+  border-radius: 50%;
+}
+
+.jenis p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.pink   { background-color: #ffd9e4; }
+.ungu   { background-color: #e5dcff; }
+.kuning { background-color: #ffe8bd; }
+.hijau  { background-color: #cdf3ea; }
+.biru   { background-color: #d5e6ff; }
+
+/* Daftar templat */
+.templat {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px 0 24px;
+}
+
+.templat h2,
+.fitur h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.daftar-kartu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gambar {
+  height: 220px;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+}
+
+.kartu:hover .gambar {
+  margin-top: -5px;
+}
+
+.kartu h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.kartu p {
+  font-size: 14px;
+  color: gray;
+}
+
+/* warna tiap gambar kartu */
+.warna1 { background: linear-gradient(180deg, #1e1b4b, #4338ca); }
+.warna2 { background: linear-gradient(160deg, #6d28d9, #ec4899); }
+.warna3 { background: linear-gradient(160deg, #be123c, #fb7185); }
+.warna4 { background: linear-gradient(160deg, #ff7a3d, #ffb199); }
+.warna5 { background: linear-gradient(160deg, #0f766e, #22d3ee); }
+.warna6 { background: linear-gradient(135deg, #1d4ed8, #60a5fa); }
+.warna7 { background: linear-gradient(160deg, #166534, #a3e635); }
+.warna8 { background: linear-gradient(180deg, #ea580c, #fbbf24); }
+
+/* Fitur */
+.fitur {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px 0 24px;
+}
+
+.daftar-fitur {
+  display: flex;
+  gap: 20px;
+}
+
+.kotak-fitur {
+  flex: 1;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.kotak-fitur h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.ungu-muda   { background-color: #ece3ff; }
+.tosca-muda  { background-color: #d3f6f7; }
+.kuning-muda { background-color: #fff0c9; }
+
+/* Ajakan */
+.ajakan {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 50px 20px;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #7d2ae8, #00c4cc);
+}
+
+.ajakan h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.tombol-putih {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 50px;
+  background-color: white;
+  color: #7d2ae8;
+  font-weight: bold;
+}
+
+
+/* ===== FOOTER (gaya Spotify) ===== */
+footer {
+  background-color: #121212;
+  color: white;
+}
+
+/* Pemutar musik */
+.pemutar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 24px;
+  background-color: #181818;
+}
+
+.lagu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 30%;
+}
+
+.cover {
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+  background: linear-gradient(160deg, #6d28d9, #ec4899);
+}
+
+.lagu p {
+  font-size: 13px;
+  color: #a7a7a7;
+}
+
+.kontrol {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 20px;
+  color: #a7a7a7;
+}
+
+.kontrol span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.putar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  line-height: 44px;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+  justify-content: flex-end;
+}
+
+.garis {
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #4d4d4d;
+}
+
+.isi {
+  width: 70%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #1ed760;
+}
+
+/* Daftar link footer */
+.footer-kolom {
+  display: flex;
+  gap: 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.footer-kolom h4 {
+  margin-bottom: 12px;
+}
+
+.footer-kolom a {
+  display: block;
+  margin-bottom: 8px;
+  color: #a7a7a7;
+}
+
+.footer-kolom a:hover {
+  color: #1ed760;
+}
+
+.hak-cipta {
+  padding: 20px;
+  border-top: 1px solid #282828;
+  text-align: center;
+  font-size: 13px;
+  color: #a7a7a7;
+}
+
+
+/* ===== TAMPILAN HP ===== */
+@media (max-width: 800px) {
+  .menu,
+  .ikon {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .jenis-desain {
+    flex-wrap: wrap;
+  }
+
+  .daftar-kartu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .daftar-fitur {
+    flex-direction: column;
+  }
+
+  .volume,
+  .kontrol {
+    display: none;
+  }
+
+  .lagu {
+    width: 100%;
+  }
+
+  .footer-kolom {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
